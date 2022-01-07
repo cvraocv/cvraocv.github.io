@@ -1,7 +1,7 @@
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+---
+layout: default
+title: Leadership & Technology 
+---
+
+
+Hi! My Name is Venkat. I am an engineering leader based out of California.

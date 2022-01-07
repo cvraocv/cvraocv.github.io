@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article id="post">
+    <h3 class="post-title">{{ page.title }}</h3>
+        <div class="post-date">{{ page.date | date: "%b %-d, %Y" }}</div>
+		<div class="post-category">Tags: {% for category in page.categories %}
+            {{ category }}
+            {% endfor %}</div> 		
+    <br/><hr/><br/>
+    {{ content }}
+</article>

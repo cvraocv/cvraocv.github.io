@@ -1,0 +1,59 @@
+---
+---
+@import "{{ site.theme }}";
+
+.header{
+    background: #85C1E9;
+    background-size: auto 100%;
+  height: 75px;
+  margin:0px;
+    border-bottom:#000000 2px solid;
+	
+}
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
+.main-content h6 {
+  color: #000000;
+}
+main {
+    padding: 50px;
+}
+body {
+    background:#FDFEFE;
+}
+
+.site-footer{
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2C3E50;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #808B96;
+  color: white;
+}

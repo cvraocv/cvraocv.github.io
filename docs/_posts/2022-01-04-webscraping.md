@@ -10,7 +10,7 @@ categories: Technology
 
 
 ### Preface
-This article is an attempt to share what I know about web scraping and help the developer community. It is a way to express my thoughts, spread the knowledge and most importantly, help others! Till date, I do code and the code snippets are from my own working code :wink:
+This article is an attempt to share what I know about web scraping and help the developer community. It is a way to express my thoughts, spread the knowledge and most importantly, help others! Till date, I do code and the code snippets are from my own working code ;)
 
 ### Summary
 
@@ -18,7 +18,8 @@ This article is an attempt to share what I know about web scraping and help the 
 
 <p> Data is critical for modern day businesses to understand their customers, competitors and to excel in the modern digital world. Companies with the right data strategy will be able to collect, cleanse and use the data that will help accelerate the business growth. </p>
 
-![Web Scraping](/assets/webscraping.jpeg)
+![Web Scraping](/assets/images/webscraping.jpeg)
+
 Image Credit: https://www.datasciencecentral.com/
 
 Every company has access to data in different ways. Here are some of them to note …
@@ -46,7 +47,7 @@ There are many 3rd parties that provide the scraping as a service for monthly fe
 ### Show me the Code
 Exciting to learn? Here is a simple way to start scraping the data — like I said above, we will use Node.js for this.
 
-##### _Pre-requisites_
+##### Pre-requisites
 - You need to have [Node.js](https://nodejs.dev/) installed on your machine
 - We will use [Cheerio](https://github.com/cheeriojs/cheerio) for parsing HTML and XML in Node.js. Cheerio makes web scraping so easy and it is fast and flexible. There are many other alternatives too.
 - We will use [axios](https://axios-http.com/docs/intro) package to fetch the markup from the websites to feed into Cheerio. Again, this is one among many others that you can use
@@ -56,7 +57,7 @@ Exciting to learn? Here is a simple way to start scraping the data — like I sa
 - Make sure your have a text editor available
 - Basic understanding of JavaScript, Node.js, and the Document Object Model DOM. If not, there are many sites where you can learn this quickly
 
-##### _Let’s get going_
+##### Let’s get going
 
 For windows cmd or powershell or using GUI editors, you might need to tweak the commands a little. I am listing this for a Unix machine
 
@@ -82,7 +83,7 @@ For windows cmd or powershell or using GUI editors, you might need to tweak the 
 
     In this picture below, you can see how it is showing the respective tag for price that I am inspecting
 
-    ![Inspect Tags](/assets/webscraping-ex1.png)
+    ![Inspect Tags](/assets/images/webscraping-ex1.png)
 
 4. **Page URL**
 
@@ -174,7 +175,9 @@ For windows cmd or powershell or using GUI editors, you might need to tweak the 
     ```
 
 Here is an example of CSS tags usage and taking the data
-```const price_array = $(“input[type=’hidden’][id=’qubitEcProduct’]”).val();```
+```
+const price_array = $(“input[type=’hidden’][id=’qubitEcProduct’]”).val();
+```
 
 If you get a JSON string as a response or extract script, you can use JSON stringify and parse to read your elements
 ```
@@ -193,7 +196,7 @@ flag: ‘a+’
 
 - Now sky is the limit. You can use sync or Async functions and get creative in what you are doing.
 
-##### Execution
+#### Execution
 You can execute it by calling `node <whatevername>.js <inputfile.csv>`
 
 ### Conclusion
